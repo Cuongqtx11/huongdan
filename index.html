@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSign - Hướng Dẫn Sử Dụng</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --card-bg: #1c1c1e;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1a6;
+            --accent-color: #0a84ff;
+            --border-radius: 16px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0 0 15px 0;
+            color: var(--text-primary);
+        }
+
+        p.subtitle {
+            color: var(--text-secondary);
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0 40px 0;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSign</h1>
+            <p class="subtitle">Ứng dụng ký IPA trực tiếp trên thiết bị</p>
+        </header>
+
+        <div class="section">
+            <h2>Giới thiệu</h2>
+            <p style="color: var(--text-secondary); margin: 0;">CSign là một công cụ mạnh mẽ dành cho iOS, giúp bạn ký và cài đặt các tệp IPA dễ dàng mà không cần máy tính. Hỗ trợ nhiều tính năng nâng cao cho người dùng chuyên nghiệp.</p>
+        </div>
+
+        <div class="section">
+            <h2>Cài đặt</h2>
+            <ul>
+                <li>Yêu cầu: iOS 16.0 trở lên.</li>
+                <li>Tải xuống file IPA mới nhất từ kênh Telegram chính thức.</li>
+                <li>Cài đặt qua TrollStore hoặc AltStore/SideStore.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ký App (Sign IPA)</h2>
+            <ul>
+                <li>Nhập chứng chỉ (Certificate & Provisioning Profile) vào ứng dụng.</li>
+                <li>Chọn tệp IPA cần ký.</li>
+                <li>Nhấn "Ký" và đợi quá trình hoàn tất.</li>
+                <li>Sau khi ký xong, bạn có thể cài đặt trực tiếp.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Tiêm Tweak (Inject Dylib)</h2>
+            <ul>
+                <li>Trong phần Tùy chọn ký, bật tính năng "Tiêm Dylib".</li>
+                <li>Chọn các file .dylib hoặc .deb bạn muốn thêm vào app.</li>
+                <li>Tiến hành ký như bình thường, các tweak sẽ được tiêm tự động.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ký Server</h2>
+            <ul>
+                <li>Bật tính năng ký qua máy chủ nếu chứng chỉ cục bộ bị thu hồi.</li>
+                <li>CSign hỗ trợ kết nối với các dịch vụ ký qua API.</li>
+                <li>Đảm bảo bạn có kết nối mạng ổn định khi sử dụng tính năng này.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hỗ Trợ & Cộng Đồng</h2>
+            <ul>
+                <li>Tham gia nhóm Telegram: <a href="https://t.me/CSignVn">@CSignVn</a></li>
+                <li>Báo cáo lỗi hoặc góp ý trực tiếp trong nhóm.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 CSign Team. Phát triển bởi Cuongqtx11.
+        </div>
+    </div>
+</body>
+</html>
